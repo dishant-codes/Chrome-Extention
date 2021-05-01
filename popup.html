@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Launcher</title>
+    <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" type="text/css">
+    
+    <style>
+        html, body{
+            font-family: 'Open Sans', sans-serif ;
+            font-size: 14px;
+            margin: 0;
+            min-height: 180px;
+            padding: 0;
+            width: 384px;
+        }
+
+        h1{
+            font-family: 'Menlo', monospace;
+            font-size: 21px;
+            font-weight: 400;
+            margin: 0;
+            color: #2f5876;
+        }
+       #logo{
+           border-radius: 50%;
+           width: 30px;
+       }
+
+       .modal-header{
+           align-items: center;
+           border-bottom: 0.5px solid #dadada;
+       }
+
+       .modal-content{
+           padding: 0 22px;
+       }
+
+       .modal-icons{
+           border-top: 0.5px solid #dadada;
+           height: 50px;
+           width: 100%;
+       }
+
+       .logo{
+           padding: 16px;
+       }
+
+       .logo-icon{
+           vertical-align: text-bottom;
+           margin-right: 5px;
+       }
+
+       .version{
+           color: #444;
+           font-size: 18px;
+       }
+
+       .flex-container{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 22px;
+       }
+
+       .flex{
+           opacity: 1;
+           transition: opacity 0.1s ease-in-out;
+           width: 120px;
+       }
+
+       .flex:hover{
+           opacity: 0.4;
+       }
+
+
+    </style>
+</head>
+
+<body>
+
+    <div class="modal-header">
+        <h1 class="logo">
+            <img id="logo" class="logo-icon" src="image/media-logo.png" alt="media launcher">
+            Developer Shortcuts <span class="version">(1.0.0) </span>
+        </h1>
+    </div>
+
+    <div class="modal-content">
+        <p>Easily access to Documentation</p>
+    </div>
+
+    <div class="modal-icons">
+        <div class="flex-container">
+            <div class="flex">
+                <a href="https://www.w3schools.com/html/" target="_blank">
+                    <img alt="HTML5" width="26px"
+                        src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" /></a>
+            </div>
+            <div class="flex">
+                <a href="https://www.w3schools.com/css/" target="_blank">
+                    <img alt="CSS3" width="26px"
+                        src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" />
+                </a>
+            </div>
+            <div class="flex">
+                <a href="https://www.w3schools.com/js/DEFAULT.asp" target="_blank">
+                    <img alt="JavaScript" width="26px"
+                        src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" />
+                </a>
+            </div>
+            <div class="flex">
+                <a href="https://reactjs.org/" target="_blank">
+                    <img alt="React" width="26px"
+                        src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" /></a>
+            </div>
+            <div class="flex">
+                <a href="https://www.github.com" target="_blank">
+                    <img alt="GitHub" width="26px"
+                        src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/github/github.png" /></a>
+            </div>
+            <div class="flex">
+                <a href="https://www.w3schools.com/cpp" target="_blank">
+                    <img alt="C++" width="26px"
+                        src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/cpp/cpp.png" />
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
